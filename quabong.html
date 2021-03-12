@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <img id="myName" src="./kisspng-transparent-balloon-large-portable-network-graph-ballons-ballons-5c8af89b324617.7802638615526114832059.png">
+    <p>
+        <b>Click button below to move the image to right</b>
+    </p>
+    <input type="button" value="check me" onclick="moveRight();"/>
+</div>
+
+</body>
+</html>
+<script>
+    let imgObj = null;
+
+    function init(){
+        imgObj = document.getElementById('myName');
+        imgObj.style.position ='relative';
+        imgObj.style.left = '0px';
+    }
+    init()
+    function moveRight(){
+        imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+    }
+</script>
